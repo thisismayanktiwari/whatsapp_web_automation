@@ -12,7 +12,7 @@ def browser(fname, fmsg):
     ffoptions.headless = True
     prof = '/Users/........../Firefox/Profiles/oy8jjdam.default-release'
     # prof stores the path to the firefox profile used to log into whatsapp web
-    # Check out the following webpage to find your profile- 
+    # Check out the following webpage to know how to find your firefox profile- 
     # https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data#w_how-do-i-find-my-profile
     driver = webdriver.Firefox(firefox_profile=prof, options=ffoptions, executable_path= '/usr/local/bin/geckodriver', service_log_path='/Users/....../Developer/Python/....../geckodriver.log')
     # executable_path stores the location of geckodriver
@@ -32,7 +32,7 @@ def check():
     month = date.today().month
     day = date.today().day
     contacts_csv = '/Users/........Developer/contacts_csv.csv'
-    # contacts_csv is used to store the path to the csv file to your contacts. Find more information about contacts_csv in README.md
+    # contacts_csv is used to store the path to the csv file of your contacts. Find more information about contacts_csv in README.md
     with open(contacts_csv, 'r') as bdays:
         reader = csv.reader(bdays)
         next(reader)
