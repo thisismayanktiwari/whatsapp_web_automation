@@ -42,8 +42,8 @@ This project depends on the automation of the execution of the python script to 
 For this project to work, it is essential to follow the exact csv file format as shown below. Since the code adds "Happy Birthday" by itself, we only need to store the message we want to write after "Happy Birthday".
 
 ```
-name,birth_month,birth_day,birth_msg
-John Doe,2,15,buddy
+name,birth_month,birth_day,birth_msg #This line is essential and must be on top
+John Doe,2,15,buddy 
 Jane Doe,5,23,Jane
 Sister Doe,3,4,sis
 ... and so on
